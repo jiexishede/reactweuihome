@@ -13,12 +13,13 @@
 
 <body>
 
+<div id="pdf">
+
+</div>
+
 <embed
         src="http://118.178.194.193:8029/formalFile/20170329/followupzhangwt.pdf" width="375" height="3000" type="application/pdf">
 
-  <!--<div id="pdf">-->
-
-  <!--</div>-->
 
 
 
@@ -27,12 +28,16 @@
 <script type="text/javascript">
   mui.init()
     mui.ready(function () {
-//      mobileRemSet(window,375);
+      mobileRemSet(window,375);
 
-//      var clientWidth = document.documentElement.clientWidth;
+      var clientWidth = document.documentElement.clientWidth;
 
 
 //      $("div#pdf").append("<embed src='http://118.178.194.193:8029/formalFile/20170329/followupzhangwt.pdf'" + "width=" + clientWidth.toString()  +  " type='application/pdf'>");
+
+      $('div#pdf').css({'background-color' :'red' , 'width' : '200px',
+        'height' : '200px'});
+
     })
 </script>
 </body>
